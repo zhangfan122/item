@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/public.css" />
+    <link rel="stylesheet" href="../../iconfont/iconfont.css" />
+    <link rel="stylesheet" href="../style/topbar.css" />
+    <link rel="stylesheet" href="../style/nav.css" />
+    <link rel="stylesheet" href="../style/detailcss/detcontent.css" />
+    <link rel="stylesheet" href="../style/footer_top.css">
+    <link rel="stylesheet" href="../style/footer_bottom.css">
+    <script src="../js/require.js" data-main="../js/main.product"></script>
+  </head>
+  <body style="background-color: #f7f7f5;">
+    <!-- topbar 工具栏-->
+    <div class="topbar">
+      <ul class="topbar_left clear_fix">
+        <li><a href="javascript:;">品牌</a></li>
+        <li><a href="javascript:;">Funtouch OS</a></li>
+        <li><a href="javascript:;">体验店</a></li>
+        <li><a href="javascript:;">企业业务</a></li>
+        <li><a href="javascript:;">社区</a></li>
+      </ul>
+
+      <div class="topbar_right clear_fix">
+        <a class="topbar_right_car clear_fix" href="javascript:;">购物车</a>
+        <div class="topbar_right_login clear_fix" style="opacity: 1;">
+          <a href="javascript:;">登录</a>
+          <i>|</i>
+          <a href="javascript:;">注册</a>
+        </div>
+      </div>
+    </div>
+    <!-- nav 导航栏 -->
+    <div class="navWrap">
+      <div class="nav">
+        <div class="nav_logo"><img src="../img/nav_logo.jpg" alt="" /></div>
+        <script>
+          let navLogo = document.querySelector(".nav_logo");
+          navLogo.onmouseenter = function () {
+            // console.log(this.firstChild);
+            this.firstChild.src = "../img/nav_logo1.jpg";
+          };
+          navLogo.onmouseleave = function () {
+            this.firstChild.src = "../img/nav_logo.jpg";
+          };
+        </script>
+        <ul class="nav_list clear_fix">
+          <li><a href="javascript:;">NEX系列</a></li>
+          <li><a href="javascript:;">X系列</a></li>
+          <li><a href="javascript:;">S系列</a></li>
+          <li><a href="javascript:;">Y系列</a></li>
+          <li><a href="javascript:;">Z系列</a></li>
+          <li><a href="javascript:;">U系列</a></li>
+          <li><a href="javascript:;">IQOO手机</a></li>
+          <li><a href="javascript:;">真无线耳机</a></li>
+          <li><a href="javascript:;">商城</a></li>
+          <li><a href="javascript:;">服务</a></li>
+        </ul>
+        <span class="iconfont search clear_fix">&#xe623;</span>
+      </div>
+    </div>
+
+    <!-- 内容区Wrap -->
+    <div class="contentWrap" style="background: #fff;">
+      <!-- 标题区 -->
+      <div class="toptit">
+        <p>
+          <a href="javascript:;">商城首页</a>
+          <span>></span>
+          <a href="javascript:;">X50 Pro</a>
+          <span>></span>
+          <span>X50 Pro</span>
+        </p>
+      </div>
+      <!-- 手机内容区 -->
+      <div class="content" >
+        <!-- 最外层左侧 1863-->
+        <div class="content-info_left   clear_fix">
+          <div class="w723" >
+            <!-- 大小图 652-->
+            <!-- <div class="w652">
+              <ul class="displaybox">
+                <div class="tags"><img src="../img/newtags.png" alt="" /></div>
+                <li><img src="../img/pic1-b.png" alt="" /></li>
+                <li style="display: none;">
+                  <img src="../img/pic2-b.png" alt="" />
+                </li>
+                <li style="display: none;">
+                  <img src="../img/pic3-b.png" alt="" />
+                </li>
+                <li style="display: none;">
+                  <img src="../img/pic4-b.png" alt="" />
+                </li>
+              </ul>
+              <ul class="smbox">
+                <li><img src="../img/pic1-s.png" alt="" /></li>
+                <li><img src="../img/pic2-s.png" alt="" /></li>
+                <li><img src="../img/pic3-s.png" alt="" /></li>
+                <li><img src="../img/pic4-s.png" alt="" /></li>
+              </ul>
+            </div> -->
+            <!-- 分享 -->
+            <div class="share">
+              <i class="iconfont">&#xe64d;</i>
+              <span>收藏商品(26403人收藏)</span>
+              <i class="iconfont">&#xe63c;</i>
+              <span>分享</span>
+            </div>
+          </div>
+        </div>
+        <!-- 最外层右侧  -->
+        <div class="content-info_right   clear_fix">
+          <!-- <div class="right-top">
+            <h1>vivo X50 Pro 5G版 8GB+128GB 液氧</h1>
+            <p>
+              <span>【限时享24期免息，高等级会员限量加赠半年延保，积分加赠兑好礼】</span>
+              微云台超感光主摄|超稳运动拍摄|90Hz高刷新率、180Hz高采样率屏幕|轻薄曲面屏|双模5G全网通
+            </p>
+          </div>
+          <div class="price">
+            <div class="price_left">
+              <p><span>￥</span>4298.00</p>
+            </div>
+            <div class="price_right">
+              <span>积分</span>
+              <b>购买即送4298积分</b>
+            </div>
+          </div>
+          <div class="zhichi">
+            <p>商品支持 :</p>
+            <ul>
+              <li><i class="iconfont">&#xe611;</i>花呗分期</li>
+              <li><i class="iconfont">&#xe611;</i>以旧换新</li>
+            </ul>
+          </div>
+          <dl class="right-middle">
+            <dt>版本</dt>
+            <dd>
+              <ul>
+                <li>X50 Pro+5G版 12GB+256GB</li>
+                <li>X50 Pro+5G版 12GB+256GB</li>
+                <li>X50 Pro+5G版 12GB+256GB</li>
+                <li>X50 Pro+5G版 12GB+256GB</li>
+                <li>X50 Pro+5G版 12GB+256GB</li>
+              </ul>
+            </dd>
+            <dt>颜色</dt>
+            <dd>
+              <ul>
+                <li><span></span>黑镜</li>
+                <li><span></span>黑镜</li>
+                <li><span></span>黑镜</li>
+                <li><span></span>黑镜</li>
+              </ul>
+            </dd>
+          </dl>
+          
+
+
+          <dl class="taocan">
+            <dt>选择套餐</dt>
+            <dd>
+              <ul>
+                <li>
+                  <h2>官方标配</h2>
+                </li>
+                <li>
+                  <h2>TWS Neo套餐</h2>
+                  <p>
+                    <span><dfn>￥</dfn>6447 </span>
+                    <span>省<dfn>￥</dfn>50</span>
+                  </p>
+                </li>
+                <li>
+                  <h2>无线运动耳机套餐</h2>
+                  <p>
+                    <span><dfn>￥</dfn>6247</span>
+                    <span>省<dfn">￥</dfn>50</span>
+                  </p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          
+
+
+          <dl class="num">
+            <dt>数量</dt>
+            <dd>
+              <div>
+                <label class="reduce">-</label><input type="number" value="1" class="shuliang" readonly  /><label class="add">+</label>
+              </div>
+              <span>(仅限购5件)</span>
+            </dd>
+          </dl>
+          
+
+
+          <dl class="payfor">
+            <dt>
+              <img src="../img/fenqi.png" alt="">
+              支持分期付款
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <div>
+                    <h2> <i>￥</i>1432.66 x 3期 </h2>
+                    <p>免息</p>
+                  </div>
+                  <span></span>
+                </li>
+                <li>
+                  <div>
+                    <h2> <i>￥</i>1432.66 x 3期 </h2>
+                    <p>免息</p>
+                  </div>
+                  <span></span>
+                </li>
+                <li>
+                  <div>
+                    <h2> <i>￥</i>1432.66 x 3期 </h2>
+                    <p>免息</p>
+                  </div>
+                  <span></span>
+                </li>
+                <li>
+                  <div>
+                    <h2> <i>￥</i>1432.66 x 3期 </h2>
+                    <p>免息</p>
+                  </div>
+                  <span></span>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          
+
+
+
+          <div class="right-bottom">
+            <div class="selected">
+              <p>￥4298</p>
+              <p>已选： X50 Pro5G版 8GB+128GB 液氧 官方标配 1件</p>
+            </div>
+            <div class="btns">
+              <div class="btn1">加入购物车</div>
+              <div class="btn2">立即购买</div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- footer 官方正品-->
+    <div class="shop-foot-area">
+      <div class="foot_top">
+        <ul>
+          <li class="clear_fix">
+            <a href="javascript:;">
+              <b class="iconfont">&#xe640;</b>官方正品
+            </a>
+          </li>
+          <li class="clear_fix">
+            <a href="javascript:;">
+              <b class="iconfont">&#xe61e;</b>顺丰极速达
+            </a>
+          </li>
+          <li class="clear_fix">
+            <a href="javascript:;">
+              <b class="iconfont">&#xe61a;</b>全国联保
+            </a>
+          </li>
+          <li class="clear_fix">
+            <a href="javascript:;">
+              <b class="iconfont">&#xe60d;</b>镭雕定制
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer_bottom -->
+    <FOOTER>
+      <div class="footer_bottom">
+        <ul class="footer-list">
+          <li>
+            <dl class="footer_category">
+              <dt>热门链接</dt>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1110&amp;name=X50 Pro"
+                  href="//www.vivo.com/vivo/x50pro/"
+                  >X50 Pro</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1110&amp;name=NEX 3S"
+                  href="//www.vivo.com.cn/vivo/nex3s/"
+                  >NEX 3S</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1110&amp;name=Z6"
+                  href="//www.vivo.com.cn/vivo/z6/"
+                  >Z6</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1110&amp;name=vivo摄影"
+                  href="http://gallery.vivo.com.cn/"
+                  >vivo摄影</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1110&amp;name=查找手机"
+                  href="https://findphone.vivo.com?ev=nbw"
+                  >查找手机</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1110&amp;name=常见问题"
+                  href="//www.vivo.com.cn/service/questions/all"
+                  >常见问题</a
+                >
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl class="footer_category">
+              <dt>在线购买</dt>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1111&amp;name=官方商城"
+                  href="https://shop.vivo.com.cn/"
+                  >官方商城</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1111&amp;name=选购手机"
+                  href="https://shop.vivo.com.cn/product/phone"
+                  >选购手机</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1111&amp;name=选购配件"
+                  href="https://shop.vivo.com.cn/product/parts"
+                  >选购配件</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1111&amp;name=企业服务"
+                  href="https://www.vivo.com.cn/cooperation"
+                  >企业服务</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1111&amp;name=以旧换新"
+                  href="https://topic.vivo.com.cn/activity/link/recycle"
+                  >以旧换新</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1111&amp;name=保障服务"
+                  href="https://www.vivo.com.cn/service/vivocare"
+                  >保障服务</a
+                >
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl class="footer_category">
+              <dt>服务支持</dt>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1112&amp;name=服务首页"
+                  href="//www.vivo.com.cn/service.html"
+                  >服务首页</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1112&amp;name=服务网点查询"
+                  href="//www.vivo.com.cn/service/map.html"
+                  >服务网点查询</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1112&amp;name=真伪查询"
+                  href="//www.vivo.com.cn/service/authenticityCheck/index"
+                  >真伪查询</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1112&amp;name=预约维修"
+                  href="//www.vivo.com.cn/service/appointment"
+                  >预约维修</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1112&amp;name=维修配件价格"
+                  href="//www.vivo.com.cn/service/accessory"
+                  target="_blank"
+                  >维修配件价格</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1112&amp;name=服务政策"
+                  href="//www.vivo.com.cn/service/policy/1"
+                  >服务政策</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1112&amp;name=安全公告"
+                  href="//www.vivo.com/service/policy/security-advisory"
+                  >安全公告</a
+                >
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl class="footer_category">
+              <dt>vivo社区</dt>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1113&amp;name=社区首页"
+                  href="https://bbs.vivo.com.cn/index.php"
+                  >社区首页</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1113&amp;name=摄影专区"
+                  href="https://bbs.vivo.com.cn/vpai.php"
+                  >摄影专区</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1113&amp;name=微博"
+                  href="https://weibo.com/vivomobile?is_hot=1"
+                  >微博</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1113&amp;name=贴吧"
+                  href="http://tieba.baidu.com/f?kw=vivo&amp;fr=ala0&amp;tpl=5"
+                  >贴吧</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1113&amp;name=兴趣部落"
+                  href="https://buluo.qq.com/p/barindex.html?bid=212058&amp;from"
+                  >兴趣部落</a
+                >
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl class="footer_category">
+              <dt>关于vivo</dt>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1114&amp;name=vivo简介"
+                  href="//www.vivo.com/brand/about"
+                  >vivo简介</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1114&amp;name=工作机会"
+                  href="https://hr.vivo.com"
+                  >工作机会</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1114&amp;name=新闻资讯"
+                  href="//www.vivo.com.cn/brand/news/list"
+                  >新闻资讯</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1114&amp;name=采购平台"
+                  href="http://s.vivo.com.cn:8020/OA_HTML/RF.jsp?function_id=28910&amp;resp_id=-1&amp;resp_appl_id=-1&amp;security_group_id=0&amp;lang_code=ZHS"
+                  target="_blank"
+                  >采购平台</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1114&amp;name= 供应商协同平台"
+                  href="https://cmp.vivo.xyz:8083/Windchill/netmarkets/vfog/supplierlogin.html#/registerIndex?pageId=registerIndex"
+                  target="_blank"
+                >
+                  供应商协同平台</a
+                >
+              </dd>
+              <dd>
+                <a
+                  data-head-click-stat="cfrom=1114&amp;name=开放平台"
+                  href="https://dev.vivo.com.cn"
+                  target="_blank"
+                  >开放平台</a
+                >
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <div class="footer-contact">
+          <a
+            class="footer-contact_info"
+            target="_blank"
+            href="https://www.vivo.com.cn/kefu"
+            ><i class="iconfont">&#xe606;</i>
+            在线客服</a>
+          <div class="footer-phoneBox">
+            <span class="footer-phone">400-678-9688</span>
+            <p>全国客户服务热线 7*24小时</p>
+          </div>
+          <div class="footer-phoneBox">
+            <span class="footer-phone">400-679-9688</span>
+            <p>NEX 专属服务热线 7*24小时</p>
+          </div>
+          <div class="footer-vivoCare">
+            <span>关注vivo</span>
+            <ul>
+              <li><i class="iconfont">&#xe608;</i></li>
+              <li><i class="iconfont">&#xe602;</i></li>
+              <li><i class="iconfont">&#xe694;</i></li>
+              <li><i class="iconfont">&#xe63e;</i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copy">
+          <p>
+            Copyright ©2011-2020
+            <span>广东天宸网络科技有限公司</span> 版权所有
+            保留一切权利 <span>|</span>
+            <span class="copy_main">
+              <a>隐私政策</a><span> | </span>
+              <a >法律声明</a><span> | </span><span></span>
+              <a>营业执照</a><span> | </span><a>粤B2-20080267 | 粤ICP备14052990号
+              </a><span> | </span>
+              <a><i class="iconfont">&#xe640;</i>粤公网安备 44190002004246号</a>
+              <span class="gap"> | </span>
+              <a class="copy_last"><i class="iconfont">&#xe844;</i>Select Location</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </FOOTER>
+
+    <!-- 固定模块 -->
+    <ul class="side">
+      <li><i class="iconfont">&#xe614;</i></li>
+      <li><i class="iconfont">&#xe622;</i></li>
+      <li><i class="iconfont">&#xe7d6;</i></li>
+      <li><i class="iconfont">&#xe619;</i></li>
+    </ul>
+  </body>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/detail.js"></script>
+  <script>
+    let contentR=document.querySelector('.content-info_right');
+
+    contentR.onclick=function(ev){
+      ev=ev || window.event;
+      if(ev.target.className==='btn1' || ev.target.className==='btn2'){
+        location.href='./shopcar1.html';
+      }
+    }
+    
+  </script>
+</html>

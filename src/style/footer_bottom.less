@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+FOOTER{
+    background-color: #fff;
+    .footer_bottom{
+        margin: 0 auto;
+        max-width: 1200px;
+        color: #333;
+        line-height: 1;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;//怪异盒模型
+        position: relative;
+        .footer-list{
+            display: inline-table;//???
+            vertical-align: top;
+            width: 75%;
+            margin-left: 20px;
+            li{
+                display: table-cell;//???
+                width: 20%;
+                box-sizing: content-box;//标准盒模型
+                white-space: nowrap;//段落和文本不进行换行
+                .footer_category dt{
+                    font-size: 16px;
+                    line-height: 17px;
+                    padding-bottom: 40px;
+                    font-family: "汉仪旗黑中粗",HYQiHei-NAV;
+                }
+                .footer_category dd{
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 18px;
+                    color: #666;
+                    a{
+                        transition: color .4s;
+                        color: inherit;//继承父元素
+                        text-decoration: none;
+                        display: inline;
+                        &:hover{
+                            color:  #415fff;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .footer-contact{
+            display: inline-block;
+            width: 180px;
+            position: absolute;
+            right: 20px;
+            .footer-contact_info{
+                display: inline-block;
+                margin-bottom: 30px;
+                color: #333;
+                font-size: 22px;
+                transition: color .4s ease-in-out;
+                i{
+                    font-size: 22px;
+                }
+                &:hover{
+                    color:  #415fff;
+                }
+            }
+    
+            .footer-phoneBox{
+                margin-bottom: 24px;
+                .footer-phone{
+                    color: #415fff;
+                    font-size: 24px;
+                }
+                p{
+                    padding-top: 10px;
+                    color: #333;
+                    font-size: 14px;
+                }
+            }
+    
+            .footer-vivoCare{
+                margin-top: 30px;
+                span{
+                    display: block;
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 1;
+                    margin-bottom: 13px;
+                }
+                ul>li{
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    transition: color .4s ease-in-out;
+                    i{
+                        font-size: 22px;
+                    }
+                    &:hover{
+                        color:  #415fff; 
+                    }
+                }
+            }
+        }
+    
+        .footer-copy{
+            margin-top: 74px;
+            padding: 30px 0;
+            white-space: normal;
+            border-top: 1px solid silver;
+            p{
+                overflow: hidden;
+                margin-top: -.25em;
+                color: #666;
+                line-height: 1.5;
+                text-align: center;
+                a{
+                    color: inherit;
+                    cursor: pointer;
+                    &:nth-last-child(1):hover{
+                        transition: color .4s ease-in-out;
+                        color:  #415fff; 
+                    }
+                }
+                .gap{
+                    margin: 0 16px;
+                }
+            }
+        }
+    }
+}

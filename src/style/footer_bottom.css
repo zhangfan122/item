@@ -1,0 +1,126 @@
+@charset "UTF-8";
+FOOTER {
+  background-color: #fff;
+}
+FOOTER .footer_bottom {
+  margin: 0 auto;
+  max-width: 1200px;
+  color: #333;
+  line-height: 1;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+FOOTER .footer_bottom .footer-list {
+  display: inline-table;
+  vertical-align: top;
+  width: 75%;
+  margin-left: 20px;
+}
+FOOTER .footer_bottom .footer-list li {
+  display: table-cell;
+  width: 20%;
+  box-sizing: content-box;
+  white-space: nowrap;
+}
+FOOTER .footer_bottom .footer-list li .footer_category dt {
+  font-size: 16px;
+  line-height: 17px;
+  padding-bottom: 40px;
+  font-family: "汉仪旗黑中粗", HYQiHei-NAV;
+}
+FOOTER .footer_bottom .footer-list li .footer_category dd {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 18px;
+  color: #666;
+}
+FOOTER .footer_bottom .footer-list li .footer_category dd a {
+  transition: color 0.4s;
+  color: inherit;
+  text-decoration: none;
+  display: inline;
+}
+FOOTER .footer_bottom .footer-list li .footer_category dd a:hover {
+  color: #415fff;
+}
+FOOTER .footer_bottom .footer-contact {
+  display: inline-block;
+  width: 180px;
+  position: absolute;
+  right: 20px;
+}
+FOOTER .footer_bottom .footer-contact .footer-contact_info {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 22px;
+  transition: color 0.4s ease-in-out;
+}
+FOOTER .footer_bottom .footer-contact .footer-contact_info i {
+  font-size: 22px;
+}
+FOOTER .footer_bottom .footer-contact .footer-contact_info:hover {
+  color: #415fff;
+}
+FOOTER .footer_bottom .footer-contact .footer-phoneBox {
+  margin-bottom: 24px;
+}
+FOOTER .footer_bottom .footer-contact .footer-phoneBox .footer-phone {
+  color: #415fff;
+  font-size: 24px;
+}
+FOOTER .footer_bottom .footer-contact .footer-phoneBox p {
+  padding-top: 10px;
+  color: #333;
+  font-size: 14px;
+}
+FOOTER .footer_bottom .footer-contact .footer-vivoCare {
+  margin-top: 30px;
+}
+FOOTER .footer_bottom .footer-contact .footer-vivoCare span {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 13px;
+}
+FOOTER .footer_bottom .footer-contact .footer-vivoCare ul > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+FOOTER .footer_bottom .footer-contact .footer-vivoCare ul > li i {
+  font-size: 22px;
+}
+FOOTER .footer_bottom .footer-contact .footer-vivoCare ul > li:hover {
+  color: #415fff;
+}
+FOOTER .footer_bottom .footer-copy {
+  margin-top: 74px;
+  padding: 30px 0;
+  white-space: normal;
+  border-top: 1px solid silver;
+}
+FOOTER .footer_bottom .footer-copy p {
+  overflow: hidden;
+  margin-top: -0.25em;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+}
+FOOTER .footer_bottom .footer-copy p a {
+  color: inherit;
+  cursor: pointer;
+}
+FOOTER .footer_bottom .footer-copy p a:nth-last-child(1):hover {
+  transition: color 0.4s ease-in-out;
+  color: #415fff;
+}
+FOOTER .footer_bottom .footer-copy p .gap {
+  margin: 0 16px;
+}
