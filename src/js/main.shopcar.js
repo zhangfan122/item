@@ -46,7 +46,7 @@ require(['jquery','shopcar','cookie'],function($,shopcar,cookie){
                     countsum();
                     countprice(ev,num);
                     changejifen(ev,num);//改积分
-                    countToprice();
+                    countToprice();//计算勾选中商品价格
                 }else if(ev.target.className==='reduce-num'){
                     num=ev.target.parentNode.children[1].value;
                     num--;
@@ -56,7 +56,7 @@ require(['jquery','shopcar','cookie'],function($,shopcar,cookie){
                     countsum();
                     countprice(ev,num);
                     changejifen(ev,num);//改积分
-                    countToprice();
+                    countToprice();//计算勾选中商品价格
                 }else if(ev.target.className==='del'){//删除单个item
                     sid=ev.target.parentNode.parentNode.children[1].children[0].children[0].children[0].dataset.sid;
                     let shop=cookie.get('shop');
@@ -88,22 +88,16 @@ require(['jquery','shopcar','cookie'],function($,shopcar,cookie){
                         allb.checked=false;
                         allt.checked=false;
                     }
+                    countsum();//计算勾选中商品总数
+                    countToprice();//计算勾选中商品价格
                 }
             })
 
 
             
             //删除选中商品
-            // deltrue.addEventListener('click',deltrueHandler);
+            deltrue.addEventListener('click',deltrueHandler);
             
-            
-
-
-
-            //不点击的时候先点击一次
-            countsum();
-            // countprice();
-            countToprice();
         }
 
         //1.重新修改cookie
@@ -122,12 +116,13 @@ require(['jquery','shopcar','cookie'],function($,shopcar,cookie){
         }
         
 
-        //2.计算商品总数量
+        //2. 计算勾选中商品总数
         function countsum(){
-            let totalnum=total.reduce((value,elm)=>{
-                return value+Number(elm.value);
+            let totalarr=cks.filter(elm=>elm.checked);
+            let totalnum=totalarr.reduce(function(value,item){
+                let num=Number(item.parentNode.parentNode.children[4].children[0].children[1].value);
+                return value+num;
             },0);
-            // console.log(totalnum);//得到数量总数
             red.innerHTML=totalnum;
         }
         
@@ -143,11 +138,15 @@ require(['jquery','shopcar','cookie'],function($,shopcar,cookie){
 
         //4.计算商品总价
         function countToprice(){
-            let totalprice=tp.reduce((value,elm)=>{
-                return value+Number(elm.innerText);
+            let totalpricearr=cks.filter(elm=>elm.checked);
+            
+            let totalp=totalpricearr.reduce(function(value,item){
+                let price=Number(item.parentNode.parentNode.children[7].innerHTML);
+                return value+price;
             },0);
-            large.textContent=totalprice.toFixed(2);
-            small.textContent=totalprice.toFixed(2);
+            // console.log(totalp);
+            large.textContent=totalp.toFixed(2);
+            small.textContent=totalp.toFixed(2);
         }
         
         //清空购物车
@@ -156,15 +155,32 @@ require(['jquery','shopcar','cookie'],function($,shopcar,cookie){
             retable.innerHTML='';
         }
 
-        //删除选中的商品
-        // function deltrueHandler(){
-        //     if()
-        // }
 
         //单选和全选
         function clickHandler(){
             cks.forEach(elm=>{
                 elm.checked=this.checked;
+            });
+            countsum();//计算勾选中商品总数
+            countToprice();//计算勾选中商品价格
+        }
+
+        //删除选中的商品
+        function deltrueHandler(ev){
+            // console.log(cks);//3个
+            ev=ev || window.event;
+            cks.forEach(elm=>{
+                if(elm.checked){
+                    // console.log(elm.parentNode.parentNode.children[1].children[0].children[0].children[0]);
+                    sid=elm.parentNode.parentNode.children[1].children[0].children[0].children[0].dataset.sid;
+                    let shop=cookie.get('shop');
+                    shop=JSON.parse(shop);
+                    let arr=shop.filter(elm=>{
+                        return elm.id!==sid;
+                    });
+                    cookie.set('shop',JSON.stringify(arr),1);
+                    retable.removeChild(elm.parentNode.parentNode);
+                }
             })
         }
     });

@@ -868,10 +868,12 @@
     </ul>
   </body>
   <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.lazyload.js"></script>
   <script src="../js/index.js"></script>
   <script src="../js/lunbotu.js"></script>
   <script src="../js/time.js"></script>
   <script>
+    $("img").lazyload({effect: "fadeIn"});
     new Lunbo().init();
 
     //购物车跳转
